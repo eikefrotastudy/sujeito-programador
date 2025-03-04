@@ -1,0 +1,342 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif; 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+.nav{
+    background-color: #181818;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 9;
+}
+
+.nav-span{
+    color: #DDD;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+    align-items: center;
+}
+
+.nav-list a{
+    color: #DDD;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.nav-list a:hover{
+    color: #FFFFFF;
+}
+/* FIM HEADER */
+
+/* MAIN */
+/* HOME */
+.home{
+    width: 100%;
+    background-color: #000000;
+    height: 100vh;
+    background-image: url(images/programador.png);
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+
+.home h1{
+    color: #FFFFFF;
+    font-size: 54px;
+}
+
+.home p{
+    color: #FFFFFF;
+    font-style: italic;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.call-to-action{
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border: 0;
+    padding: 14px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.call-to-action:hover{
+    transform: scale(1.1);
+}
+
+.home a{
+    text-decoration: none;
+    color: #181818;
+}
+
+/* FIM HOME */
+
+/* INICIO ABOUT */
+.about{
+    width: 100%;
+    background-color: #FFFFFF;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about div{
+    max-width: 50%;
+    padding-right: 40px;
+}
+
+.about img{
+    max-width: 450px;
+    border-radius: 10px;
+}
+
+.about div h2{
+    font-size: 32px;
+    margin-bottom: 14px;
+}
+
+.about div p{
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.5;
+}
+/* FIM ABOUT */
+
+/* INICIO PROJECTS */
+.projects{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.projects h2{
+    font-size: 32px;
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+
+.projects p{
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.project-list{
+    width: 100%;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects img{
+    border-radius: 5px;
+    width: 25%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.projects img:hover{
+    opacity: 1;
+
+}
+
+.action{
+    background-color: #181818;
+    border: 0;
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.action:hover{
+    transform: scale(1.1);
+}
+/* FIM PROJECTS */
+/* FIM MAIN */
+
+/* INICIO FOOTER */
+footer{
+    width: 100%;
+    background-color: #181818;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+/* FIM FOOTER */
+
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 1100px){
+    /* INICIO HOME */
+    .home h1{
+        font-size: 45px;
+    }
+
+    .home p{
+        font-size: 18px;
+    }
+
+    .home{background-size: cover;}
+    /* FIM HOME */
+
+    /* INICIO ABOUT */
+    .about{
+        flex-direction: column;
+        padding-top: 80px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+
+    .about div{
+        max-width: 80%;
+    }
+
+    .about div h2{
+        font-size: 45px;
+    }
+
+    .about img{
+        width: 80%;
+        margin-top: 30px;
+    }
+    /* FIM ABOUT */
+
+    /* INICIO PROJECTS */
+    .projects img{
+        width: 28%;
+    }
+    /* FIM PROJECTS */
+
+    /* INICIO FOOTER */
+    .footer p{
+        margin: 0;
+    }
+    /* FIM FOOTER */
+}
+
+
+
+@media (max-width: 600px){
+    /* INICIO HEADER */
+    .nav-span{
+        font-size: 25px;
+        margin-right: 10px;
+    }
+    /* FIM HEADER */
+
+    /* INICIO HOME */
+    .home h1{
+        font-size: 40px;
+    }
+
+    .home p{
+        font-size: 18px;
+    }
+    
+    .call-to-action{
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .home{background-size: cover;}
+    /* FIM HOME */
+
+    /* INICIO ABOUT */
+    .about{
+        flex-direction: column;
+        padding-top: 40px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+
+    .about div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 90%;
+        padding: 8px;
+    }
+
+    .about div h2{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .about div p{
+        font-size: 18px;
+    }
+
+    .about img{
+        width: 80%;
+        margin-top: 30px;
+    }
+    /* FIM ABOUT */
+
+    /* INICIO PROJECTS */
+    .project-list{
+        flex-direction: column;
+    }
+
+    .projects img{
+        margin: 10px;
+        width: 80%;
+    }
+
+    .action{
+        padding: 10px 20px;
+    }
+    /* FIM PROJECTS */
+
+    /* INICIO FOOTER */
+    .footer p{
+        margin: 0;
+    }
+    /* FIM FOOTER */
+}
